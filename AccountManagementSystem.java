@@ -9,12 +9,12 @@ public class AccountManagementSystem {
         while(true) {
             Scanner input = new Scanner(System.in);
             System.out.println("Please select the requested action:");
-            System.out.println("1. for create new account");
-            System.out.println("2. for withdraw");
-            System.out.println("3. for deposit");
-            System.out.println("4. for balance");
-            System.out.println("5. for special services");
-            System.out.println("6. for exit");
+            System.out.println("1. Create new account");
+            System.out.println("2. Withdraw");
+            System.out.println("3. Deposit");
+            System.out.println("4. Balance");
+            System.out.println("5. Special services");
+            System.out.println("6. Exit");
             int num = input.nextInt();
             switch (num) {
                 case 1:
