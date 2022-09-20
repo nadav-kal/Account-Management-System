@@ -15,30 +15,18 @@ public class Bank {
 
     public void createNewAccount() {
 
-//        Scanner accountParams = new Scanner(System.in);
-//        System.out.println("Enter account number:");
-//        int number = accountParams.nextInt();
-//        System.out.println("Enter name:");
-//        accountParams.nextLine();
-//        String name = accountParams.nextLine();
-//        System.out.println("Enter balance:");
-//        int balance = accountParams.nextInt();
-//        System.out.println("Do you want to make it business account?:");
-//        System.out.println("1. Yes");
-//        System.out.println("2. No");
-//        int busineesAccount = accountParams.nextInt();
         Object[] params = returnParams();
         int number = (int) params[0];
         String name = (String) params[1];
         int balance = (int) params[2];
-        int busineesAccount = (int) params[3];
+        int businessAccount = (int) params[3];
         if(accounts.containsKey(number)) {
             System.out.println("This account is already exists");
             return;
         }
 
         BankAccount account;
-        if(busineesAccount == 1) {
+        if(businessAccount == 1) {
             account = new BusinessAccount(number, name, balance, true);
         }
         else {

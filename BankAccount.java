@@ -3,7 +3,6 @@ import java.util.HashMap;
 public abstract class BankAccount {
 
     private int number;
-//    private String name;
     private int balance;
 
     private boolean isBusinessAccount;
